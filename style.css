@@ -5,14 +5,18 @@
     font-family: 'Poppins', sans-serif;
     
 }
-body {
-    height: 100vh;
+.pagina {
+    min-height: 100vh;
     display: flex;
     flex-direction: column;
-
-
+    justify-content: space-between;
+    background-color: #151515;
+    gap: 150px;
 }
 
+h3{
+    color: white;
+}
 .nav{
     display: flex;
     gap: 30px;
@@ -23,11 +27,13 @@ body {
     width: 100%;
     display: flex;
     justify-content:space-between;
-    padding: 20px;
+    padding: 25px;
     flex-wrap: wrap; 
-    background-color: #151515;
+    background-color: #151515e6;
     box-shadow: 0px 4px 10px rgba(255, 166, 0, 0.25) ;
-    z-index: 1;
+    position: sticky    ;
+    top:0;
+    backdrop-filter: blur(20px);
 }
 .texto-header{
     font-size: 30px;
@@ -51,9 +57,10 @@ body {
 
 .secao1{
     display: flex;
-   flex-grow: 2;
+    flex-grow: 2;
+   background-color: #1b1b1b1b;
+
  
-   background-color: #151515;
 }
 .secao1-texto1{
 color: white;
@@ -63,11 +70,54 @@ padding: 50px;
 
 .secao2{
     display: flex;
-    flex-grow: 2;
-    border: 1px solid rgb(23, 168, 7); 
-    background-color: #121212;
+    flex-direction: column;
+    align-items: center;
+    gap: 100px;
+    padding: 20px;
+    flex-grow: 1;
 }
 
-.secao2-texto2{
+.conteudo-secao2{
+    display: flex;
+    width: 90%;
+}
 
+.img-sobre-secao2{
+    width: 400px;
+    height: 400px;
+    object-fit: fill;
+   
+}
+#texto-secao2{
+    color: white;
+}
+
+.secao3{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 50px;
+}
+.projetos-secao3{
+
+    display: flex;
+    width: 60%;
+    flex-wrap: wrap;
+    justify-content: center;    
+    align-content: center;
+   gap: 15px;
+}
+.projeto-elemento-secao3{
+    text-decoration: none;
+    padding: 120px;
+    border: 2px solid white;
+    border-radius: 10px;
+}
+
+.footer{
+    display: flex;
+    padding: 40px;
+    background-color: #1b1b1b1b; 
+    justify-content: center;
+    color: white;
 }
