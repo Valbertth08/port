@@ -38,11 +38,12 @@
     cursor: pointer;
 }
 
+
+
 #icone-menu{
     background-color: white;
     display: none;
 }
-
 .texto-header{
     font-size: 30px;
     color: white;
@@ -50,7 +51,7 @@
 }
 .nav-header{
     display: flex;
-    gap: 50px;
+    gap: 60px;
     align-items: center;   
 }
 .nav-button{
@@ -63,11 +64,24 @@
     border-bottom: 2px solid transparent; 
     letter-spacing: 1px;
     font-weight: 700;
+    position: relative;
+    padding-bottom: 3px;
 }
-.nav-button:hover{
-    transition: 0.4s;
-    border-bottom: 2px solid orange;
+.nav-button::after{
+    content: " ";
+    width: 0%;
+    height: 2px;
+    background-color: orange;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    transition: 0.5s ease-in-out;
 }
+.nav-button:hover::after{
+    width: 100%;
+}
+
+
 .container-home{
     display: flex;
     flex-direction: column;
@@ -149,6 +163,9 @@
     height: 400px;
     min-height: auto;
     object-fit: contain;
+
+    border-color: linear-gradient(45deg,#ffff00,#00ff00,#0099ff,#001aff,#a200ff,#ff0055,#ff0000
+    #ffff00,#00ff00,#0099ff,#001aff,#a200ff);
 }
 
 .texto-sobre{

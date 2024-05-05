@@ -3,7 +3,7 @@ window.addEventListener("scroll",function(){
     header.classList.toggle('scrol',this.window.scrollY>0)
 })
 function clickMenu(){
-    if( menu.style.display== 'block'){
+    if( elementos.style.display== 'block'){
         menu.style.display='none';
     }
     else{
