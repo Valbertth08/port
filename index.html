@@ -11,57 +11,91 @@
 </head>
 
 <body>
-    <section class="container-pagina">
+    <section class="container-pagina" id="id-home">
         <header class="header">
-           
+           <a href="#id-home">
             <img class="logo-header" src="img/WhatsApp Image 2024-01-28 at 15.57.13.png" alt="logo">
+           </a>
             <nav class="nav-header">
-                <a  class="nav-button nav-button-menu "> Home</a>
-                <a class="nav-button"> Sobre</a>
-                <a class="nav-button"> Experiência</a>
-                <a class="nav-button"> Projetos</a>
-                <a class="nav-button nav-button-menu "> Skills</a>
+                <a  class="nav-button nav-button-menu " href="#id-home" > Home</a>
+                <a class="nav-button" href="#id-sobre"> Sobre</a>
+                <!-- <a class="nav-button"> Experiência</a> -->
+                <a class="nav-button" href="#id-projetos"> Projetos</a>
+                <a class="nav-button nav-button-menu " href="#id-skills"> Skills</a>
             </nav>
         </header>
         <section class="container-home">
             <div class="container-home-elementos">
                 <div class="container-home-textos-icones">
-                    <h1> Desenvolvedor Back-End Java <i class="em em-coffee icone" aria-role="presentation" aria-label="HOT BEVERAGE"></i> </h1>
-                    <p>Olá, me chamo Valbertth. Venha conhecer um pouco da minha trajetoria na programação.</p>
+                    <h1>  Analista de Sistemas <i class="em em-computer icone" aria-role="presentation" aria-label="PERSONAL COMPUTER"></i> </h1>
+                    <p>Olá, me chamo Valbertth. Venha conhecer um pouco da minha trajetória no mundo da TI.</p>
                     <a href="arquivos/CURRICULO-VALBERTTH(PRO-P).pdf"  download="CURRICULO-VALBERTTH(PRO-P).pdf" class="button-home">Download CV</a>
                 </div>
                 <div class="container-img-home">
                     <img class=" img-home" src="img/linkedin.jpg" alt="teste">
                 </div>
-            </div>
-
-        </section>
-        <section class="container-sobre">
+            </div> 
+        </section >
+        
+        <section class="container-sobre"  id="id-sobre">
             <div>
                 <h2> <span style="color: #ffa500;">Sobre </span> mim </h2>
             </div>
-            <div class="container-sobre-elementos">
-                <img class="sobre-ilustracao" src=" img/Design inspiration-pana.png" alt="img-sobre">
-                <div class="container-sobre-elementos-div"> 
-                <p class="texto-sobre"> Olá, me chamo valbertth e atualmente estou no 7 período do curso de Sistemas 
-                    de Informação e estou empenhado na programação com o intuito de desenvolver as habilidades necessárias para conseguir
-                     minha primeira vaga como programador back-end.</p> 
-                     <div class="container-sobre-icones">
-                        <a href="">
-                            <img class="sobre-icone" src="icones/1161953_instagram_icon.png" alt="icone-instagram">
-                        </a>
-                        <a href="">
-                            <img class="sobre-icone" src="icones/5279114_linkedin_network_social network_linkedin logo_icon.png" alt="icone-linkedin">
-                        </a>
-                        <a href="">
-                            <img class="sobre-icone" src="icones/291716_github_logo_social network_social_icon.png" alt="icone-github">
-                        </a> 
-                    </div>
+            <div class="container-sobre-grupo">
+                <div class="container-sobre-elementos">
+                    <img class="sobre-ilustracao" src=" img/Design inspiration-pana.png" alt="img-sobre">
+                    <div class="container-sobre-elementos-div"> 
+                        <h3> <span style="color: #ffa500;">A</span>nalista de <span style="color: #ffa500;">S</span>istemas</h3>
+                        <div id="elemento-ponto">
+                            <div>
+                                <img src="icones/icons8-divisa-para-baixo-60.png" alt="">   
+                                <p>Bacharel em Sistemas de Informação </p>
+                            </div>
+                            <div>
+                                <img src="icones/icons8-divisa-para-baixo-60.png" alt="">
+                                <p>Pós graduando em Engenharia de Software</p>
+                            </div>
+                            <div>
+                                <img src="icones/icons8-divisa-para-baixo-60.png" alt="">
+                                <p> Nivél basico (A2) de inglês</p>
+                            </div>
+                            <div>
+                                <img src="icones/icons8-divisa-para-baixo-60.png" alt="">
+                                <p>Focado no desenvolvimento Back-End</p>
+                            </div>
+                        </div>
+                            <div class="container-sobre-icones">
+                                <a href="https://www.linkedin.com/in/valbertth-alves-b5209425b/">
+                                    <img class="sobre-icone" src="icones/5279114_linkedin_network_social network_linkedin logo_icon.png" alt="icone-linkedin">
+                                </a>
+                                <a href="https://github.com/Valbertth08">
+                                    <img class="sobre-icone" src="icones/291716_github_logo_social network_social_icon.png" alt="icone-github">
+                                </a> 
+                            </div>
+
+                     </div>
                 </div>
             </div>
+                 <div class="container-sobre-contato">
+                    <p id="contato-titulo">Entre em contato comigo! <i class="em em-phone icone-sobre-contato" aria-role="presentation" aria-label="BLACK TELEPHONE"> </i></p> 
+                    <div class="container-sobre-contato-grupo">
+                        <div class="container-sobre-contato-elemento">
+                            <img src="/icones/icons8-nova-mensagem-100 (1).png" alt="">
+                            <div>
+                                <p id="elemento-gmail">Gmail</p>
+                                <p>valbertthalvespro@gmail.com</p>
+                            </div>
+                        </div>
+                        <div class="container-sobre-contato-elemento">
+                            <a href="https://encurtador.com.br/PBAQk"> Me mande um oi !
+                                <img src="icones/icons8-whatsapp-50.png" alt="">
+                            </a>
+                        </div>
+                    </div>
+                 </div>
         </section>
 
-        <section class="container-experiencia">
+        <!-- <section class="container-experiencia">
             <h2> <span style="color: #ffa500;">E</span>xperiências</h2>
             <div  class="experiencia-elemento">
                 <img src="/img/Captura de tela 2024-12-27 140309.png" alt="logo-empresa">
@@ -73,23 +107,43 @@
                     <p><span style="color: #ffc400;">Stacks:</span> Python, Django, Mysql, UML</p>
                 </div>
             </div>
-        </section>
+        </section> -->
 
-        <section class="container-projetos">
+        <section class="container-projetos" id="id-projetos">
             <div id="titulo-projetos">
-                <h2> <span style="color: #ffa500;"> P</span>rojetos </h2>
+                <h2> <span style="color: #ffa500; font-weight: bold"> P</span>rojetos </h2>
             </div>
             <div class="container-projetos-flex">
             <div class="projetos-elementos">
                 <a class="elemento-projeto grid-projeto1" href="" >
-                    <img class="elemento-projeto-img" src="img/Captura de tela 2024-11-05 191550.png" alt="">
+                    <img class="elemento-projeto-img" src="img/Captura de tela 2025-01-05 122855.png" alt="">
+                    <div class="elemento-projeto-overlay">
+                        <p>Clique aqui para ver o projeto!</p>
+                        <img src="img/icons8-clique-aqui-100.png" alt="clique-aqui">
+                    </div>
                 </a>
                 <div class="elemento-projeto grid-projeto2">
+                    
                     <a href=""> API Barbearia</a>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid, asperiores fuga voluptas debitis ducimus recusandae nulla voluptates perferendis deleniti id!</p>
+                    <p>A api REST desenvolvida, é voltada para o gerenciamento de recursos para uma barbearia. 
+                        Todos os requisitos coletados foram de um cenário real de uma barbearia LOCAL da cidade de 
+                        Paço do Lumiar (Maranhão - Brasil).</p>
+                        <p>
+                            <span style="color: #ffa600c5; font-weight: bold;">Componentes: </span> sistema de autenticação, gerencimamento de relatorios, validação 
+                            de regras de negócio (utilizando o SOLID) e operações de CRUD nas principais entidades.
+                        </p>
+                        <p>
+                            <span style="color: #ffa600c5; font-weight: bold">Stacks: </span>Java, Spring Boot, Spring Security, SOLID, MySQL.
+                        </p>
+                        
+                 
                 </div>
                 <a class="elemento-projeto grid-projeto3" href="" > 
                     <img class="elemento-projeto-img" src="img/Captura de tela 2024-11-05 191550.png" alt="">
+                    <div class="elemento-projeto-overlay">
+                        <p>Clique aqui para ver o projeto!</p>
+                        <img src="img/icons8-clique-aqui-100.png" alt="clique-aqui">
+                    </div>
                 </a>
                 <div class="elemento-projeto grid-projeto4" >
                     <a href=""> API Barbearia</a>
@@ -97,6 +151,10 @@
                 </div>
                 <a class="elemento-projeto grid-projeto5"  href="" > 
                     <img class="elemento-projeto-img" src="img/Captura de tela 2024-11-05 191550.png" alt="">
+                    <div class="elemento-projeto-overlay">
+                        <p>Clique aqui para ver o projeto!</p>
+                        <img src="img/icons8-clique-aqui-100.png" alt="clique-aqui">
+                    </div>
                 </a> 
                 <div class="elemento-projeto grid-projeto6" >
                     <a href=""> API Barbearia</a>
@@ -105,7 +163,9 @@
             </div>
         </div>
         </section>
-        <section class="container-skills">
+
+        <section class="container-skills " id="id-skills">
+            
             <h2> <span style="color: #ffa500;"> S</span>kills</h2>
             <div class="container-skills-icones">
                 <div class="skills-icone" href="">
@@ -134,27 +194,27 @@
                     <p>JavaScript</p>
                 </div>
                 <div class="skills-icone" href="">
-                    <img src="/icones/8666389_java_icon (1).png" alt="icone-java">
-                    <p>Java</p>
+                    <img src="/icones/icons8-angular-100.png" alt="icone-angular">
+                    <p>Angular</p>
                 </div>
                 <div class="skills-icone">
-                    <img src="/icones/9055841_bxl_spring_boot_icon.png" alt="icone-springboot">
-                    <p>Spring Boot</p>
+                    <img src="/icones/icons8-python-100 (1).png" alt="icone-python">
+                    <p>Python</p>
                 </div>
                 <div class="skills-icone">
-                    <img src="/icones/4691328_postgresql_icon.png" alt="icone-postgreesql">
-                    <p>PostgreSQL</p>
+                    <img src="/icones/icons8-linux-100.png "alt="icone-Linux">
+                    <p>Linux</p>
                 </div>
 
                 <div  class="skills-icone">
-                    <img src="/icones/8666266_git_alt_icon.png" alt="icone-git">
-                    <p>Git</p>
+                    <img src="/icones/icons8-bootstrap-100 (1).png" alt="icone-bootstrap">
+                    <p>Bootstrap</p>
                 </div>
             
             </div>
         </section>
         <footer class="footer">
-            <p>Desenvolvido por <span style="color: orange;">Valbertth Alves</span></p>
+            <p>Copyright © 2024 <span style="color: orange;">Valbertth Alves </span> - Todos os direitos reservados.</p>
         </footer>
     </section>
     <script src="header.js"></script>
