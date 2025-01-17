@@ -187,24 +187,24 @@
         width: 100%;
     }
     80% {
-        width: 100%; /* Aumenta até a largura completa */
+        width: 100%; 
     }
     100% {
-        width: 100%; /* Permanece completo antes de reiniciar */
+        width: 100%; 
     }
 }
 @keyframes alternar {
     50% {
-        border-color: transparent; /* Piscar do cursor */
+        border-color: transparent; 
     }
 }
 .container-home-textos-icones div h1 i {
-    margin-left: 0; /* Remove qualquer margem extra à esquerda */
-    margin-right: 0; /* Remove qualquer margem extra à direita */
+    margin-left: 0; 
+    margin-right: 0; 
 }
 .icone {
    font-size: 32px;
-   margin-left: 0; /* Remove qualquer margem extra à esquerda */
+   margin-left: 0; 
    margin-right: 0; 
 }
 .button-home{
@@ -292,8 +292,10 @@
     gap: 50px;
 
 }
-.container-sobre-elementos-div > h3{
+.container-sobre-elementos-div > div > h3{
+    display: flex;
     font-size: 26px;
+    gap: 7px;
 
 }
 
@@ -464,6 +466,7 @@ text-align: justify;
     justify-content: center;
     gap: 10px;
 }
+
 .container-sobre-contato-elemento > div > #elemento-gmail{
     font-size: 14px;
     font-weight: bold;
@@ -684,64 +687,3 @@ text-align: justify;
     letter-spacing: 1px;
 }
 
-@media(min-width:280px) and (max-width:900px){
-
-    .header{
-        gap: 20px;
-    }
-
-    nav > .nav-button-menu{
-        display: none;
-    }
-   
-    .logo-header{
-        width: 11%;
-        object-fit: contain;
-        cursor: pointer;
-    }
-    .container-home-elementos{
-        flex-wrap: wrap-reverse;
-    }
-    .home-ilustracao{
-        width: 90%;
-    }
-    .container-home-elementos{
-        gap: 10px; 
-    }
-    .container-home-textos-icones{
-        gap: 10px;   
-    }
-    .container-home-textos{
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
-    .container-sobre-icones{
-        justify-content: center;
-        padding: 20px;
-    }
-    .container-sobre-elementos{
-    display: flex;
-    width: 100%;
-    gap: 40px;
-    flex-wrap: wrap;
-    }
-   .img-sobre{
-    width: 100%;
-    }
-    .projetos-elementos{
-        display: grid;
-        align-items: center;
-        grid-template-rows:repeat(6,200px);
-        grid-template-columns: minmax(auto,100%);
-        grid-template-areas: 
-        "grid-projeto1" 
-        "grid-projeto2" 
-        "grid-projeto3"
-        "grid-projeto4" 
-        "grid-projeto5"
-        "grid-projeto6";
-        width:100%;
-        gap: 40px;    
-    }
-}
