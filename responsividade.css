@@ -7,6 +7,49 @@
         background-color: #1b1b1b;
         gap: 0px;
     }
+    .container-home-elementos {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap-reverse;
+        width: 90%;
+        gap: 40px;
+    }
+    .container-home-textos-icones{
+        display: flex;
+        width: 90%;
+        flex-direction: column;
+        justify-content: center;  
+        line-height: 1.1;
+        gap: 30px;
+    }
+    .container-home-textos-icones div  {
+        width: 93%;
+       display: inline-block;
+     }
+
+    .container-home-textos-icones div h1 {
+        font-size: 1.6rem;
+        margin-left: 20px;
+    }
+
+    .button-home{
+        width: 50%;
+       margin-left: 95px;
+    }
+    
+    .container-img-home {
+        width: 60%;
+    }
+
+    @keyframes img-flutuante {
+        0% {
+            top: 0;
+        
+        }
+        100% {
+            top: 20px;
+        }
+    }
 
     .sobre-ilustracao {
         width: 100%;
