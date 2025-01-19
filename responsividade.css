@@ -186,6 +186,47 @@
         background-color: #1b1b1b;
         gap: 0px;
     }
+    .container-home-elementos {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap-reverse;
+        width: 90%;
+        gap: 40px;
+    }
+    .container-home-textos-icones{
+        display: flex;
+        width: 90%;
+        flex-direction: column;
+        justify-content: center;  
+        line-height: 1.1;
+        gap: 30px;
+    }
+    .container-home-textos-icones div  {
+         width: 76%;
+         display: inline-block;
+     }
+
+    .container-home-textos-icones div h1 {
+        font-size: 1.6rem;
+        margin-left: 70px;
+    }
+    .button-home{
+        width: 45%;  
+        margin-left: 130px;
+    }
+    .container-img-home {
+        width: 60%;
+    }
+
+    @keyframes img-flutuante {
+        0% {
+            top: 0;
+        
+        }
+        100% {
+            top: 20px;
+        }
+    }
 
     .sobre-ilustracao {
         width: 100%;
@@ -200,10 +241,7 @@
     .container-sobre-elementos-div > div >h3{
         display: flex;
         font-size: 22px;
-        justify-content: center;
-        
-
-    
+        justify-content: center;    
     }
     .container-sobre-elementos {
         display: flex;
@@ -232,8 +270,6 @@
         height: 200px;
         gap: 40px;
     }
-  
-   
     .container-sobre {
         display: flex;
         flex-direction: column;
@@ -250,9 +286,7 @@
     }
     .container-sobre-contato-elemento > a {
         margin-right: 20px;
-     }
-
-
+    }
     .container-projetos {
         display: flex;
         flex-direction: column;
@@ -280,7 +314,6 @@
         gap: 40px;    
         row-gap: 60px;
     }
-
     .container-projetos> #titulo-projetos{
         display: flex   ;
         color: white;
@@ -288,17 +321,13 @@
         font-size: 20px;
         margin-top: 15px;
     }
-
     .elemento-projeto-img{
         width: 100%;
-
     }
     .elemento-projeto{
         width: 90%;
         height: 90%;
-    
     }
-
     .container-skills {
         display: flex;
         flex-direction: column;
