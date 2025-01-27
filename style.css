@@ -165,18 +165,23 @@
 
 .container-home-textos-icones div  {
    width: 91.2%;
-  display: inline-block;
+  display:inline-block;
+ 
 }
 
 .container-home-textos-icones div h1 {
-    display: inline-block; 
+    display: flex; 
+    gap: 15px;
+    align-items: center;
     animation: texto 10s steps(22) infinite , alternar 0.5s step-end infinite alternate;
     white-space: nowrap;
     overflow: hidden;
     border-right: 3px solid;
     letter-spacing: 2px; 
     font-size: 4rem;
+    margin: 0 auto;
     width: 0;
+ 
 }
 
 @keyframes texto {
@@ -198,18 +203,16 @@
         border-color: transparent; 
     }
 }
-.container-home-textos-icones div h1 i {
-    margin-left: 0; 
-    margin-right: 0; 
-}
+
+
 .icone {
-   font-size: 32px;
+   font-size: 33px;
    margin-left: 0; 
    margin-right: 0; 
 }
 
 .button-home{
-    width: 20%;
+    width: 22%;
     display: inline-block;
     padding: 10px 20px;
     font-size: 16px;
